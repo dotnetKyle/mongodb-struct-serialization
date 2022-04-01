@@ -1,6 +1,7 @@
 using MongoDB.Bson.Serialization;
 using MongoDB.Bson.Serialization.Serializers;
 
+// see: https://mongodb.github.io/mongo-csharp-driver/2.9/reference/bson/serialization/
 public class MongoSerializationProvider : IBsonSerializationProvider
 {
     public IBsonSerializer GetSerializer(Type type)
