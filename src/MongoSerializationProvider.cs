@@ -11,3 +11,11 @@ public class MongoSerializationProvider : IBsonSerializationProvider
         return null;
     }
 }
+
+/*
+Usage: inside the Startup.cs or a early place near where the database gets set up (where it will run only once)
+
+MongoDB.Bson.Serialization.BsonSerializer
+    .RegisterSerializationProvider(new MongoSerializationProvider());
+
+*/
